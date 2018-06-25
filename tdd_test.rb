@@ -7,4 +7,7 @@ class TestCigar < Minitest::Test
         assert_equal(1, 1)
     end
 
+    def test_if_function_has_string
+    	assert_equal(String, cigar().class)
+    end
 end
