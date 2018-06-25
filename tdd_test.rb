@@ -18,4 +18,8 @@ class TestCigar < Minitest::Test
     def test_if_1_match_returns_2
     	assert_equal(2,cigar("1234","1255"))
     end
+
+    def test_if_array_returns_1
+    	assert_equal(1, cigararr(cigar, ["1234", "15555"]))
+    end
 end

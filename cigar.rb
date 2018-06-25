@@ -9,4 +9,7 @@ def cigar(num,winnum)
 	end
 	counter
 end
- 
+
+def cigararr() 
+
+end
