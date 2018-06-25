@@ -8,14 +8,10 @@ class TestCigar < Minitest::Test
     end
 
     def test_if_function_has_string
-    	num = "1234"
-    	winnum = "12345"
-    	assert_equal(String, cigar(num,winnum).class)
+    	assert_equal(Integer, cigar("", "").class)
     end
 
-    def test_if_num_has_winnum_characters
-    	num = "1234"
-    	winnum = "12345"
-    	assert_equal("1234", cigar(num,winnum).split)
+    def test_if_1_match_returns_1
+    	assert_equal(1, cigar("1234", "1555"))
     end
 end
