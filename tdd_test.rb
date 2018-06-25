@@ -15,7 +15,7 @@ class TestCigar < Minitest::Test
     	assert_equal(1, cigar("1234", "1555"))
     end
 
-    def test_if_1_match_returns_1
-    	assert_equal(1,cigar("1234","12555"))
+    def test_if_1_match_returns_2
+    	assert_equal(2,cigar("1234","1255"))
     end
 end
