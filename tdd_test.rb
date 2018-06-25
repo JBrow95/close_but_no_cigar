@@ -19,7 +19,7 @@ class TestCigar < Minitest::Test
     	assert_equal(2,cigar("1234","1255"))
     end
 
-    def test_if_array_returns_1
+    def test_if_array_equals_winningticket
     	assert_equal([4,2,2], cigararr(["1234", "1222", "1245"], "1234"))
     end
 end

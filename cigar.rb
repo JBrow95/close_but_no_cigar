@@ -15,5 +15,5 @@ def cigararr(mytickarray, winningtick)
 	mytickarray.each do |ticket|
 		ret << cigar(ticket, winningtick)
 	end
-	ret
+	ret     
 end
