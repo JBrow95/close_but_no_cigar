@@ -20,6 +20,6 @@ class TestCigar < Minitest::Test
     end
 
     def test_if_array_returns_1
-    	assert_equal(1, cigararr(cigar, ["1234", "15555"]))
+    	assert_equal([4,2,2], cigararr(["1234", "1222", "1245"], "1234"))
     end
 end
