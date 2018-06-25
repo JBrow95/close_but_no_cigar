@@ -18,6 +18,10 @@ def cigararr(mytickarray, winningtick)
 	ret     
 end
 
-def moretickets()
-
+def moretickets(other, winningtick)
+	ret = []
+	other.each do |ticket|
+		ret << cigar(ticket, winningtick)
+	end
+	ret
 end

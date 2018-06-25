@@ -24,6 +24,6 @@ class TestCigar < Minitest::Test
     end
 
     def test_if_moretickets_equals_winningticket
-    	assert_equal([4], moretickets(["1233", "1234"], "1234"))
+    	assert_equal([4,3], moretickets(["1234", "1233"], "1234"))
     end
 end
