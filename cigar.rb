@@ -17,3 +17,7 @@ def cigararr(mytickarray, winningtick)
 	end
 	ret     
 end
+
+def moretickets()
+
+end
