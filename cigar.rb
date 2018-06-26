@@ -19,7 +19,6 @@ def cigararr(mytickarray, winningtick)
 	ret     
 end
 
-
-
-
-
+def winarr(mytickarray, winningtick)
+	
+end
