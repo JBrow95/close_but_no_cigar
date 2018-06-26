@@ -1,9 +1,10 @@
+
 def cigar(num,winnum)
 	num = num.split("")
 	winnum = winnum.split("")
 	counter = 0
-	num.each_with_index do |n, i| 
-		if n == winnum[i]
+	num.each_with_index do |ticket, index| 
+		unless ticket == winnum[index]
 			counter += 1
 		end
 	end
@@ -18,10 +19,7 @@ def cigararr(mytickarray, winningtick)
 	ret     
 end
 
-def moretickets(other, winningtick)
-	ret = []
-	other.each do |ticket|
-		ret << cigar(ticket, winningtick)
-	end
-	ret
-end
+
+
+
+

@@ -11,19 +11,16 @@ class TestCigar < Minitest::Test
     	assert_equal(Integer, cigar("", "").class)
     end
 
-    def test_if_1_match_returns_1
-    	assert_equal(1, cigar("1234", "1555"))
+    def test_if_off_by_3
+    	assert_equal(3, cigar("1234", "1555"))
     end
 
-    def test_if_1_match_returns_3
-    	assert_equal(3,cigar("1235","1245"))
-    end
-    
-    def test_if_mytick_equals_winning_tick
-    	assert_equal([4,2,2], cigararr(["1234", "1222", "1245"], "1234"))
+    def test_if_off_by_1
+    	assert_equal(1,cigar("1235","1245"))
     end
 
-    def test_if_moretickets_equals_winningticket
-    	assert_equal([4,3], moretickets(["1234", "1233"], "1234"))
+     def test_if_mytick_off_by
+      assert_equal([0,2,2], cigararr(["1234", "1222", "1245"], "1234"))
     end
+
 end
