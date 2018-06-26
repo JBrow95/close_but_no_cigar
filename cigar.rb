@@ -20,5 +20,17 @@ def cigararr(mytickarray, winningtick)
 end
 
 def winarr(mytickarray, winningtick)
-	
+	warr = []
+
+	winningtick.each do |ticket|
+	matches = cigararr(mytickarray, ticket)
+	winners = 0
+		matches.each_with_index do |m|
+			if m == 0 
+			winners += 1
+			end
+		end
+		warr << winners
+	end
+	warr
 end
