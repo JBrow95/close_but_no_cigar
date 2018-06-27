@@ -29,15 +29,16 @@ def winarr(mytickarray, winningtick)
 			if m == 0 
 			winners += 1
 			elsif 
-				offs << m
+				offs.push(m)
 			end
 		end
-		warr << winners
+		warr.push(winners)
 	end
 	offs = offs.sort
 	warr = warr.sort
+
 	combine = []
-	combine << warr
-	combine << offs
+	combine.push(warr)
+	combine.push(offs)
 	return combine
 end
