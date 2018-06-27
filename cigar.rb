@@ -36,5 +36,5 @@ def winarr(mytickarray, winningtick)
 		warr << winners
 	end
 	warr << off_by
-	warr
+	p warr
 end
