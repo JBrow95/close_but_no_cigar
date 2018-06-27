@@ -1,4 +1,5 @@
 
+
 def cigar(num,winnum)
 	num = num.split("")
 	winnum = winnum.split("")
@@ -35,7 +36,10 @@ def winarr(mytickarray, winningtick)
 		end
 		warr << winners
 	end
+	off_by = off_by.sort
 	warr = warr.sort
-	warr << off_by.sort
-	p warr
+	new_arr = []
+	new_arr << warr
+	new_arr << off_by
+	new_arr
 end
