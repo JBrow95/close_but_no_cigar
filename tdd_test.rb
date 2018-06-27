@@ -23,11 +23,7 @@ class TestCigar < Minitest::Test
       assert_equal([0,2,2], cigararr(["1234", "1222", "1245"], "1234"))
     end
 
-    def test_if_winners_equal_2
-        assert_equal([1, [1,2]], winarr(["1234","1224","1224"], ["1234"]))
-    end
-
-    def test_if_winners_equal_2
+    def test_if_winners_and_offs_are_sorted
         assert_equal([[1,2,],[1,1,1,1,2]], winarr(["1234","1224","1224","1233"], ["1224","1234"]))
     end
 end
