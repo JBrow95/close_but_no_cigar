@@ -21,7 +21,7 @@ end
 
 def winarr(mytickarray, winningtick)
 	warr = []
-	
+	off_by = []
 
 	winningtick.each do |ticket|
 	matches = cigararr(mytickarray, ticket)
@@ -29,9 +29,12 @@ def winarr(mytickarray, winningtick)
 		matches.each do |m|
 			if m == 0 
 			winners += 1
+			elsif 
+				off_by << m
 			end
 		end
 		warr << winners
 	end
+	warr << off_by
 	warr
 end
