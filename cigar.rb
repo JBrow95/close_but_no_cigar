@@ -1,5 +1,3 @@
-
-
 def cigar(num,winnum)
 	num = num.split("")
 	winnum = winnum.split("")
@@ -22,7 +20,7 @@ end
 
 def winarr(mytickarray, winningtick)
 	warr = []
-	off_by = []
+	offs = []
 
 	winningtick.each do |ticket|
 	matches = cigararr(mytickarray, ticket)
@@ -31,15 +29,15 @@ def winarr(mytickarray, winningtick)
 			if m == 0 
 			winners += 1
 			elsif 
-				off_by << m
+				offs << m
 			end
 		end
 		warr << winners
 	end
-	off_by = off_by.sort
+	offs = offs.sort
 	warr = warr.sort
-	new_arr = []
-	new_arr << warr
-	new_arr << off_by
-	new_arr
+	combine = []
+	combine << warr
+	combine << offs
+	return combine
 end
